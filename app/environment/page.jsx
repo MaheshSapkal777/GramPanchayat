@@ -1,0 +1,1 @@
+export default function Page(){return <h2>Environment</h2>;}
