@@ -152,6 +152,17 @@ a {
   color: var(--primary);
 }
 
+.nav-link.active {
+  background: rgba(255,255,255,0.2);
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.dropdown-item.active {
+  background-color: var(--soft-bg);
+  color: var(--primary);
+  font-weight: 600;
+}
 
 
 /* Responsive */
