@@ -12,7 +12,9 @@
   --color-card: #ffffff;
 
   /* TEXT */
-  --color-heading: #0d47a1;
+  /* --color-heading: #0d47a1; */
+  --color-heading: #0288d1;
+
   --color-text: #333333;
 
   /* STATUS */
