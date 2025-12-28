@@ -1,5 +1,26 @@
 {
   "site": {
     "title": "ग्रामपंचायत"
+  },
+  "menu": {
+    "home": "मुख्यपृष्ठ",
+    "about": "ग्रामपंचायतीबद्दल",
+    "development": "विकास",
+    "projects": "प्रमुख प्रकल्प",
+    "schemes": "योजना",
+    "finance": "अर्थसंकल्प",
+    "infrastructure": "पायाभूत सुविधा",
+    "services": "सेवा",
+    "citizen_services": "नागरिक सेवा",
+    "grievance": "तक्रार निवारण",
+    "announcements": "घोषणा व परिपत्रके",
+    "community": "समाज",
+    "culture": "संस्कृती",
+    "employment": "रोजगार",
+    "education": "शिक्षण",
+    "environment": "पर्यावरण",
+    "media": "गॅलरी",
+    "dashboard": "डॅशबोर्ड",
+    "contact": "संपर्क"
   }
 }

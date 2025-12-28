@@ -1,5 +1,26 @@
 {
   "site": {
     "title": "Gram Panchayat"
+  },
+   "menu": {
+    "home": "Home",
+    "about": "About",
+    "development": "Development",
+    "projects": "Projects",
+    "schemes": "Schemes",
+    "finance": "Finance",
+    "infrastructure": "Infrastructure",
+    "services": "Services",
+    "citizen_services": "Citizen Services",
+    "grievance": "Grievance",
+    "announcements": "Announcements",
+    "community": "Community",
+    "culture": "Culture",
+    "employment": "Employment",
+    "education": "Education",
+    "environment": "Environment",
+    "media": "Gallery",
+    "dashboard": "Dashboard",
+    "contact": "Contact"
   }
 }
