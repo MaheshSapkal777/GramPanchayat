@@ -142,6 +142,16 @@ a {
   text-decoration: underline;
 }
 
+.dropdown-menu {
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+}
+
+.dropdown-item:hover {
+  background-color: var(--soft-bg);
+  color: var(--primary);
+}
+
 
 
 /* Responsive */

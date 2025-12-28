@@ -1,1 +1,15 @@
-export default function Page(){return <h2>Finance</h2>;}
+// ADD THIS FILE
+
+import BudgetSummary from "../../components/finance/BudgetSummary";
+import IncomeExpenseGrid from "../../components/finance/IncomeExpenseGrid";
+import BudgetChartsPlaceholder from "../../components/finance/BudgetChartsPlaceholder";
+
+export default function FinancePage() {
+  return (
+    <>
+      <BudgetSummary />
+      <IncomeExpenseGrid />
+      <BudgetChartsPlaceholder />
+    </>
+  );
+}

@@ -1,1 +1,15 @@
-export default function Page(){return <h2>Culture</h2>;}
+// ADD THIS FILE
+
+import VillageIdentity from "../../components/culture/VillageIdentity";
+import HeritageGrid from "../../components/culture/HeritageGrid";
+import VirtualGalleryPlaceholder from "../../components/culture/VirtualGalleryPlaceholder";
+
+export default function CulturePage() {
+  return (
+    <>
+      <VillageIdentity />
+      <HeritageGrid />
+      <VirtualGalleryPlaceholder />
+    </>
+  );
+}
