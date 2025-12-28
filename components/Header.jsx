@@ -5,6 +5,20 @@ import { usePathname } from 'next/navigation';
 import { useTranslation } from "react-i18next";
 import "../i18n";
 
+// Icons (ONLY inside dropdown items – safe)
+import {
+  FaProjectDiagram,
+  FaClipboardList,
+  FaMoneyBillWave,
+  FaRoad,
+  FaHandsHelping,
+  FaBullhorn,
+  FaUsers,
+  FaBriefcase,
+  FaGraduationCap,
+  FaLeaf
+} from "react-icons/fa";
+
 export default function Header() {
   const pathname = usePathname();
   const { t, i18n } = useTranslation();
@@ -40,52 +54,110 @@ export default function Header() {
             </li>
 
             {/* DEVELOPMENT */}
-            <li className={`nav-item dropdown ${isGroupActive(["/projects", "/schemes", "/finance", "/infrastructure"]) ? "active" : ""}`}>
+            <li className={`nav-item dropdown ${isGroupActive(["/projects","/schemes","/finance","/infrastructure"]) ? "active" : ""}`}>
               <a
-                className={`nav-link dropdown-toggle ${isGroupActive(["/projects", "/schemes", "/finance", "/infrastructure"]) ? "active" : ""}`}
+                className={`nav-link dropdown-toggle ${isGroupActive(["/projects","/schemes","/finance","/infrastructure"]) ? "active" : ""}`}
                 href="#"
                 data-bs-toggle="dropdown"
               >
                 {t("menu.development")}
               </a>
+
               <ul className="dropdown-menu">
-                <li><Link className={`dropdown-item ${isActive("/projects") ? "active" : ""}`} href="/projects">{t("menu.projects")}</Link></li>
-                <li><Link className={`dropdown-item ${isActive("/schemes") ? "active" : ""}`} href="/schemes">{t("menu.schemes")}</Link></li>
-                <li><Link className={`dropdown-item ${isActive("/finance") ? "active" : ""}`} href="/finance">{t("menu.finance")}</Link></li>
-                <li><Link className={`dropdown-item ${isActive("/infrastructure") ? "active" : ""}`} href="/infrastructure">{t("menu.infrastructure")}</Link></li>
+                <li>
+                  <Link className={`dropdown-item ${isActive("/projects") ? "active" : ""}`} href="/projects">
+                    <FaProjectDiagram className="dropdown-icon" />
+                    {t("menu.projects")}
+                  </Link>
+                </li>
+                <li>
+                  <Link className={`dropdown-item ${isActive("/schemes") ? "active" : ""}`} href="/schemes">
+                    <FaClipboardList className="dropdown-icon" />
+                    {t("menu.schemes")}
+                  </Link>
+                </li>
+                <li>
+                  <Link className={`dropdown-item ${isActive("/finance") ? "active" : ""}`} href="/finance">
+                    <FaMoneyBillWave className="dropdown-icon" />
+                    {t("menu.finance")}
+                  </Link>
+                </li>
+                <li>
+                  <Link className={`dropdown-item ${isActive("/infrastructure") ? "active" : ""}`} href="/infrastructure">
+                    <FaRoad className="dropdown-icon" />
+                    {t("menu.infrastructure")}
+                  </Link>
+                </li>
               </ul>
             </li>
 
             {/* SERVICES */}
-            <li className={`nav-item dropdown ${isGroupActive(["/services", "/grievance", "/announcements"]) ? "active" : ""}`}>
+            <li className={`nav-item dropdown ${isGroupActive(["/services","/grievance","/announcements"]) ? "active" : ""}`}>
               <a
-                className={`nav-link dropdown-toggle ${isGroupActive(["/services", "/grievance", "/announcements"]) ? "active" : ""}`}
+                className={`nav-link dropdown-toggle ${isGroupActive(["/services","/grievance","/announcements"]) ? "active" : ""}`}
                 href="#"
                 data-bs-toggle="dropdown"
               >
                 {t("menu.services")}
               </a>
+
               <ul className="dropdown-menu">
-                <li><Link className={`dropdown-item ${isActive("/services") ? "active" : ""}`} href="/services">{t("menu.citizen_services")}</Link></li>
-                <li><Link className={`dropdown-item ${isActive("/grievance") ? "active" : ""}`} href="/grievance">{t("menu.grievance")}</Link></li>
-                <li><Link className={`dropdown-item ${isActive("/announcements") ? "active" : ""}`} href="/announcements">{t("menu.announcements")}</Link></li>
+                <li>
+                  <Link className={`dropdown-item ${isActive("/services") ? "active" : ""}`} href="/services">
+                    <FaHandsHelping className="dropdown-icon" />
+                    {t("menu.citizen_services")}
+                  </Link>
+                </li>
+                <li>
+                  <Link className={`dropdown-item ${isActive("/grievance") ? "active" : ""}`} href="/grievance">
+                    <FaBullhorn className="dropdown-icon" />
+                    {t("menu.grievance")}
+                  </Link>
+                </li>
+                <li>
+                  <Link className={`dropdown-item ${isActive("/announcements") ? "active" : ""}`} href="/announcements">
+                    <FaClipboardList className="dropdown-icon" />
+                    {t("menu.announcements")}
+                  </Link>
+                </li>
               </ul>
             </li>
 
             {/* COMMUNITY */}
-            <li className={`nav-item dropdown ${isGroupActive(["/culture", "/employment", "/education", "/environment"]) ? "active" : ""}`}>
+            <li className={`nav-item dropdown ${isGroupActive(["/culture","/employment","/education","/environment"]) ? "active" : ""}`}>
               <a
-                className={`nav-link dropdown-toggle ${isGroupActive(["/culture", "/employment", "/education", "/environment"]) ? "active" : ""}`}
+                className={`nav-link dropdown-toggle ${isGroupActive(["/culture","/employment","/education","/environment"]) ? "active" : ""}`}
                 href="#"
                 data-bs-toggle="dropdown"
               >
                 {t("menu.community")}
               </a>
+
               <ul className="dropdown-menu">
-                <li><Link className={`dropdown-item ${isActive("/culture") ? "active" : ""}`} href="/culture">{t("menu.culture")}</Link></li>
-                <li><Link className={`dropdown-item ${isActive("/employment") ? "active" : ""}`} href="/employment">{t("menu.employment")}</Link></li>
-                <li><Link className={`dropdown-item ${isActive("/education") ? "active" : ""}`} href="/education">{t("menu.education")}</Link></li>
-                <li><Link className={`dropdown-item ${isActive("/environment") ? "active" : ""}`} href="/environment">{t("menu.environment")}</Link></li>
+                <li>
+                  <Link className={`dropdown-item ${isActive("/culture") ? "active" : ""}`} href="/culture">
+                    <FaUsers className="dropdown-icon" />
+                    {t("menu.culture")}
+                  </Link>
+                </li>
+                <li>
+                  <Link className={`dropdown-item ${isActive("/employment") ? "active" : ""}`} href="/employment">
+                    <FaBriefcase className="dropdown-icon" />
+                    {t("menu.employment")}
+                  </Link>
+                </li>
+                <li>
+                  <Link className={`dropdown-item ${isActive("/education") ? "active" : ""}`} href="/education">
+                    <FaGraduationCap className="dropdown-icon" />
+                    {t("menu.education")}
+                  </Link>
+                </li>
+                <li>
+                  <Link className={`dropdown-item ${isActive("/environment") ? "active" : ""}`} href="/environment">
+                    <FaLeaf className="dropdown-icon" />
+                    {t("menu.environment")}
+                  </Link>
+                </li>
               </ul>
             </li>
 
@@ -115,8 +187,12 @@ export default function Header() {
 
         {/* LANGUAGE SWITCH */}
         <div className="ms-auto">
-          <button className="btn btn-sm btn-light me-2" onClick={() => i18n.changeLanguage("mr")}>मराठी</button>
-          <button className="btn btn-sm btn-outline-light" onClick={() => i18n.changeLanguage("en")}>English</button>
+          <button className="btn btn-sm btn-light me-2" onClick={() => i18n.changeLanguage("mr")}>
+            मराठी
+          </button>
+          <button className="btn btn-sm btn-outline-light" onClick={() => i18n.changeLanguage("en")}>
+            English
+          </button>
         </div>
 
       </div>
