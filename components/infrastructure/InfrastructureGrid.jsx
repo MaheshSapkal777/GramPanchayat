@@ -9,12 +9,14 @@ export default function InfrastructureGrid() {
       <SectionTitle title="ग्राम पायाभूत सुविधा" />
 
       <div className="row">
-        {data.items.map((i, idx) => (
-          <div key={idx} className="col-md-4 mb-3" data-aos="zoom-in">
-            <div className="grid-card light">
-              <div className="grid-icon">{i.icon}</div>
-              <strong>{i.title}</strong>
-              <p className="mb-0">{i.desc}</p>
+        {data.facilities.map((item, i) => (
+          <div key={i} className="col-md-4 mb-3">
+            <div className="grid-card light text-center">
+              <div className="grid-icon" style={{ fontSize: "32px" }}>
+                {item.icon}
+              </div>
+              <strong>{item.title}</strong>
+              <p className="mb-0 text-muted">{item.desc}</p>
             </div>
           </div>
         ))}

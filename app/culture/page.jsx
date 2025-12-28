@@ -1,15 +1,15 @@
-// ADD THIS FILE
-
-import VillageIdentity from "../../components/culture/VillageIdentity";
-import HeritageGrid from "../../components/culture/HeritageGrid";
-import VirtualGalleryPlaceholder from "../../components/culture/VirtualGalleryPlaceholder";
+import VillageIntro from "../../components/culture/VillageIntro";
+import CultureGrid from "../../components/culture/CultureGrid";
+import PridePeople from "../../components/culture/PridePeople";
+import VillageVoicePlaceholder from "../../components/culture/VillageVoicePlaceholder";
 
 export default function CulturePage() {
   return (
     <>
-      <VillageIdentity />
-      <HeritageGrid />
-      <VirtualGalleryPlaceholder />
+      <VillageIntro />
+      <CultureGrid />
+      <PridePeople />
+      <VillageVoicePlaceholder />
     </>
   );
 }

@@ -1,0 +1,16 @@
+{
+  "services": [
+    {
+      "name": "जन्म प्रमाणपत्र",
+      "link": "https://rts.maharashtra.gov.in"
+    },
+    {
+      "name": "मृत्यू प्रमाणपत्र",
+      "link": "https://rts.maharashtra.gov.in"
+    },
+    {
+      "name": "रहिवासी प्रमाणपत्र",
+      "link": "https://aaplesarkar.mahaonline.gov.in/mr/Login/Certificate_Documents?ServiceId=1252"
+    }
+  ]
+}

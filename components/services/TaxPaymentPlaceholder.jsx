@@ -7,8 +7,8 @@ export default function TaxPaymentPlaceholder() {
     <section className="my-5">
       <SectionTitle title="ऑनलाइन कर भरणा" />
 
-      <div className="grid-card light text-center">
-        💳 येथे QR कोड / ऑनलाइन कर भरणा सुविधा जोडली जाईल
+      <div className="grid-card text-center">
+        💳 येथे QR कोड / ऑनलाइन कर भरणा सुविधा दाखवली जाईल
       </div>
     </section>
   );

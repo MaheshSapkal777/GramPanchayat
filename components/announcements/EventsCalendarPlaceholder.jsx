@@ -2,16 +2,13 @@
 
 import SectionTitle from "../common/SectionTitle";
 
-export default function EventsCalendarPlaceholder() {
+export default function EventCalendarPlaceholder() {
   return (
     <section className="my-5">
-      <SectionTitle title="कार्यक्रम कॅलेंडर" />
+      <SectionTitle title="कार्यक्रम व बैठक कॅलेंडर" />
 
-      <div
-        className="grid-card light text-center"
-        style={{ minHeight: "200px" }}
-      >
-        📅 येथे कार्यक्रम व ग्रामसभा कॅलेंडर दर्शविले जाईल
+      <div className="grid-card light text-center">
+        📅 येथे भविष्यात इंटरअॅक्टिव्ह कॅलेंडर दाखवले जाईल
       </div>
     </section>
   );

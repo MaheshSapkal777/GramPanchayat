@@ -9,11 +9,12 @@ export default function BeneficiaryStories() {
       <SectionTitle title="लाभार्थी अनुभव" />
 
       <div className="row">
-        {data.stories.map((s, i) => (
-          <div key={i} className="col-md-6 mb-3" data-aos="fade-right">
+        {data.beneficiaries.map((b, i) => (
+          <div key={i} className="col-md-6 mb-3">
             <div className="grid-card">
-              <strong>{s.name}</strong>
-              <p className="mb-0">{s.story}</p>
+              <strong>{b.name}</strong>
+              <p className="mb-1"><em>{b.scheme}</em></p>
+              <p className="mb-0">“{b.story}”</p>
             </div>
           </div>
         ))}

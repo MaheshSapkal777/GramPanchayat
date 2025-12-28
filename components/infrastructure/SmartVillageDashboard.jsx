@@ -1,6 +1,7 @@
 "use client";
 
 import SectionTitle from "../common/SectionTitle";
+import data from "../../data/infrastructure.json";
 
 export default function SmartVillageDashboard() {
   return (
@@ -8,15 +9,11 @@ export default function SmartVillageDashboard() {
       <SectionTitle title="स्मार्ट व्हिलेज डॅशबोर्ड" />
 
       <div className="row text-center">
-        {[
-          { label: "पाणीपुरवठा", value: "95%" },
-          { label: "वीजपुरवठा", value: "100%" },
-          { label: "स्वच्छता", value: "90%" }
-        ].map((i, idx) => (
-          <div key={idx} className="col-md-4 mb-3" data-aos="fade-up">
+        {data.dailyStats.map((s, i) => (
+          <div key={i} className="col-md-4 mb-3">
             <div className="grid-card">
-              <h3>{i.value}</h3>
-              <p>{i.label}</p>
+              <h3>{s.value}</h3>
+              <p>{s.label}</p>
             </div>
           </div>
         ))}
