@@ -242,3 +242,97 @@ h1, h2, h3, h4, h5 {
   background-color: var(--secondary);
   border-color: var(--secondary);
 }
+
+/* ==================================================
+   MOBILE HEADER UX POLISH
+================================================== */
+@media (max-width: 991px) {
+
+  /* Navbar spacing */
+  .navbar {
+    padding: 10px 0;
+  }
+
+  /* Stack menu nicely */
+  .navbar-nav {
+    margin-top: 12px;
+    background: #ffffff;
+    border-radius: var(--radius-md);
+    padding: 10px;
+    box-shadow: var(--shadow-soft);
+  }
+
+  /* Top-level menu items */
+  .navbar-nav .nav-link {
+    color: var(--primary) !important;
+    padding: 12px 14px;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+
+  .navbar-nav .nav-link.active {
+    background: var(--soft-bg);
+  }
+
+  /* Dropdown toggle arrow spacing */
+  .dropdown-toggle::after {
+    float: right;
+    margin-top: 8px;
+  }
+
+  /* Dropdown menu (mobile) */
+  .dropdown-menu {
+    position: static !important;
+    min-width: 100%;
+    box-shadow: none;
+    padding: 6px 0;
+  }
+
+  /* Dropdown items bigger for touch */
+  .dropdown-item {
+    font-size: 15px;
+    padding: 10px 14px;
+  }
+
+  /* Remove hover animation on mobile */
+  .dropdown-item:hover {
+    transform: none;
+  }
+}
+
+/* ==================================================
+   MEGA MENU (DESKTOP ONLY)
+================================================== */
+@media (min-width: 992px) {
+
+  /* Mega menu width */
+  .dropdown-menu {
+    width: 520px;
+  }
+
+  /* Mega menu background */
+  .dropdown-menu {
+    background: #ffffff;
+    border-top: 4px solid var(--primary);
+  }
+
+  /* Column separation */
+  .dropdown-menu.show {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Section title (optional) */
+  .dropdown-header {
+    grid-column: 1 / -1;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--secondary);
+    padding: 6px 12px;
+    margin-top: 4px;
+  }
+
+  /* Mega menu item look */
+  .dropdown-item {
+    background: transparent;
+  }
+}
