@@ -1,11 +1,13 @@
-import VillageStats from "../../components/dashboard/VillageStats";
-import Achievements from "../../components/dashboard/Achievements";
+import DashboardSummary from "../../components/dashboard/DashboardSummary";
+import WardComparison from "../../components/dashboard/WardComparison";
+import TopAchievements from "../../components/dashboard/TopAchievements";
 
 export default function DashboardPage() {
   return (
     <>
-      <VillageStats />
-      <Achievements />
+      <DashboardSummary />
+      <WardComparison />
+      <TopAchievements />
     </>
   );
 }

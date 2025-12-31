@@ -302,6 +302,16 @@ h1, h2, h3, h4, h5 {
   }
 }
 
+.progress {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  border-radius: 10px;
+}
+
 /* ==================================================
    MEGA MENU (DESKTOP ONLY)
 ================================================== */
