@@ -1,0 +1,35 @@
+{
+  "jobs": [
+    {
+      "title": "रोजगार हमी योजना काम",
+      "type": "मनरेगा",
+      "status": "उपलब्ध"
+    }
+  ],
+
+  "trainings": [
+    {
+      "name": "डिजिटल साक्षरता",
+      "desc": "युवकांसाठी संगणक प्रशिक्षण",
+      "image": "/images/employment/digital.jpg"
+    },
+    {
+      "name": "शिवणकाम प्रशिक्षण",
+      "desc": "महिलांसाठी कौशल्य विकास",
+      "image": "/images/employment/tailoring.jpg"
+    }
+  ],
+
+  "talents": [
+    {
+      "name": "राजमिस्त्री",
+      "contact": "9876543210",
+      "image": "/images/employment/mistery.jpg"
+    }
+  ],
+
+  "farmerSupport": {
+    "image": "/images/employment/farmer.png",
+    "text": "पीक सल्ला, बाजारभाव व कृषी माहिती"
+  }
+}

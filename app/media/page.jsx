@@ -1,11 +1,15 @@
-import PhotoGalleryPlaceholder from "../../components/media/PhotoGalleryPlaceholder";
-import VideoGalleryPlaceholder from "../../components/media/VideoGalleryPlaceholder";
+import PhotoGallery from "../../components/media/PhotoGallery";
+import VideoGallery from "../../components/media/VideoGallery";
+import BeforeAfterPlaceholder from "../../components/media/BeforeAfterPlaceholder";
+import MiniDocsPlaceholder from "../../components/media/MiniDocsPlaceholder";
 
 export default function MediaPage() {
   return (
     <>
-      <PhotoGalleryPlaceholder />
-      <VideoGalleryPlaceholder />
+      <PhotoGallery />
+      <VideoGallery />
+      <BeforeAfterPlaceholder />
+      <MiniDocsPlaceholder />
     </>
   );
 }

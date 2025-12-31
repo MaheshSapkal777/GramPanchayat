@@ -1,15 +1,15 @@
-// ADD THIS FILE
-
 import SchoolInfo from "../../components/education/SchoolInfo";
-import ScholarshipInfo from "../../components/education/ScholarshipInfo";
-import YouthCorner from "../../components/education/YouthCorner";
+import ScholarshipList from "../../components/education/ScholarshipList";
+import CareerGuidance from "../../components/education/CareerGuidance";
+import YouthSpeakPlaceholder from "../../components/education/YouthSpeakPlaceholder";
 
 export default function EducationPage() {
   return (
     <>
       <SchoolInfo />
-      <ScholarshipInfo />
-      <YouthCorner />
+      <ScholarshipList />
+      <CareerGuidance />
+      <YouthSpeakPlaceholder />
     </>
   );
 }

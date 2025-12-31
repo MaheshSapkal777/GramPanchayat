@@ -1,0 +1,13 @@
+{
+  "photos": [
+    { "src": "/images/media/photo1.jpg", "caption": "गणेशोत्सव" },
+    { "src": "/images/media/photo2.jpg", "caption": "रस्ते काम" },
+    { "src": "/images/media/photo3.jpg", "caption": "वृक्षारोपण" }
+  ],
+  "videos": [
+    {
+      "title": "गाव विकास काम",
+      "embed": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    }
+  ]
+}

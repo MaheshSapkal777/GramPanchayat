@@ -1,11 +1,15 @@
 import ContactInfo from "../../components/contact/ContactInfo";
-import VolunteerFormPlaceholder from "../../components/contact/VolunteerFormPlaceholder";
+import ContactMap from "../../components/contact/ContactMap";
+import ContactForm from "../../components/contact/ContactForm";
+import VolunteerPlaceholder from "../../components/contact/VolunteerPlaceholder";
 
 export default function ContactPage() {
   return (
     <>
       <ContactInfo />
-      <VolunteerFormPlaceholder />
+      <ContactMap />
+      <ContactForm />
+      <VolunteerPlaceholder />
     </>
   );
 }

@@ -1,0 +1,11 @@
+{
+  "office": {
+    "name": "ग्रामपंचायत कार्यालय",
+    "address": "ग्रामपंचायत भवन, मुख्य रस्ता",
+    "phone": "0231-123456",
+    "email": "contact@gp.gov.in"
+  },
+
+  "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.279213504778!2d74.433000!3d16.732990!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc0c1c958f8f795%3A0x96a2a6f6d9ebd76f!2sKumbhoj%2C%20Maharashtra%20416111!5e0!3m2!1sen!2sin!4v1704000000000"
+
+}
