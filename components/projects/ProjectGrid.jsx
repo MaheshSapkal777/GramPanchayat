@@ -6,24 +6,18 @@ import data from "../../data/projects.json";
 export default function ProjectGrid() {
   return (
     <section className="my-5">
-
       <SectionTitle title="प्रमुख प्रकल्प" />
 
       <div className="row">
         {data.projects.map((p, i) => (
-          <div key={i} className="col-md-4 mb-4" data-aos="fade-up">
-            <div className="grid-card light h-100">
+          <div key={i} className="col-md-4 mb-3">
+            <div className="grid-card light">
               <div className="grid-icon">🏗️</div>
 
-              <h6 className="fw-bold mb-2">{p.name}</h6>
+              <strong>{p.name}</strong>
 
-              <p className="mb-1">
-                <strong>वर्ष:</strong> {p.year}
-              </p>
-
-              <p className="mb-1">
-                <strong>खर्च:</strong> ₹ {p.cost}
-              </p>
+              <p className="mb-1">वर्ष: {p.year}</p>
+              <p className="mb-1">खर्च: ₹ {p.cost}</p>
 
               <span
                 className={`badge ${
@@ -36,7 +30,6 @@ export default function ProjectGrid() {
           </div>
         ))}
       </div>
-
     </section>
   );
 }
