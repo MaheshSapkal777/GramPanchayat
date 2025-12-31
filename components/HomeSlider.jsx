@@ -1,43 +1,62 @@
 "use client";
 
-// REPLACE THIS FILE
+import data from "../data/home.json";
+
 export default function HomeSlider() {
   return (
     <div
-      id="homeSlider"                 // IMPORTANT: ID must match indicators
+      id="homeSlider"
       className="carousel slide mb-4"
       data-bs-ride="carousel"
     >
-      {/* UPDATE: DOT INDICATORS */}
+      {/* DOT INDICATORS */}
       <div className="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#homeSlider"  // MUST MATCH ID
-          data-bs-slide-to="0"
-          className="active"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#homeSlider"
-          data-bs-slide-to="1"
-        ></button>
+        {data.slider.map((_, i) => (
+          <button
+            key={i}
+            type="button"
+            data-bs-target="#homeSlider"
+            data-bs-slide-to={i}
+            className={i === 0 ? "active" : ""}
+          />
+        ))}
       </div>
 
+      {/* SLIDES */}
       <div className="carousel-inner">
-        <div className="carousel-item active">
-          <img src="/images/banner1.png" className="d-block w-100 banner-img" alt="banner" />
-        </div>
+        {data.slider.map((slide, i) => (
+          <div
+            key={i}
+            className={`carousel-item ${i === 0 ? "active" : ""}`}
+          >
+            <img
+              src={slide.image}
+              className="d-block w-100 banner-img"
+              alt="banner"
+            />
 
-        <div className="carousel-item">
-          <img src="/images/banner2.png" className="d-block w-100 banner-img" alt="banner" />
-        </div>
+            <div className="carousel-caption d-none d-md-block">
+              <h3>{slide.title}</h3>
+              <p>{slide.subtitle}</p>
+            </div>
+          </div>
+        ))}
       </div>
 
-      {/* OPTIONAL CONTROLS */}
-      <button className="carousel-control-prev" data-bs-target="#homeSlider" data-bs-slide="prev">
+      {/* CONTROLS */}
+      <button
+        className="carousel-control-prev"
+        data-bs-target="#homeSlider"
+        data-bs-slide="prev"
+      >
         <span className="carousel-control-prev-icon"></span>
       </button>
-      <button className="carousel-control-next" data-bs-target="#homeSlider" data-bs-slide="next">
+
+      <button
+        className="carousel-control-next"
+        data-bs-target="#homeSlider"
+        data-bs-slide="next"
+      >
         <span className="carousel-control-next-icon"></span>
       </button>
     </div>
